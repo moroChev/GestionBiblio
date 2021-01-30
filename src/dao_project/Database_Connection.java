@@ -7,7 +7,7 @@ public class Database_Connection {
 
 	private static String url = "jdbc:mysql://localhost:3306/biblio?autoReconnect=true&useSSL=false" ;
 	private static String user = "root";
-	private static String passwd = "Mohssin2222";
+	private static String passwd = "";
 	private static String driver = "com.mysql.jdbc.Driver";
 	private static Connection conn;
 
@@ -18,7 +18,7 @@ public class Database_Connection {
 	public static Connection getConnection() {
 		if( conn != null )
 		{
-		System.out.println("connexion déja faite !!");
+		System.out.println("connexion dÃ©ja faite !!");
 		return conn;
 		}
 		
@@ -28,7 +28,7 @@ public class Database_Connection {
 			
 			conn = DriverManager.getConnection(url, user, passwd);
 			
-			System.out.println("connexion sans probléme La classe DataBase !!!");
+			System.out.println("connexion sans problÃ©me La classe DataBase !!!");
 		}
 		catch(Exception e)
 		{
